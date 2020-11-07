@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #e5e5e5;
+}
+
+.menu {
+  display: inline-block;
+  padding: 20px;
+  color: black;
+}
+
+.menu:hover {
+  background-color: grey;
+  color: white;
+}
+
+#infoCorona {
+  display: flex;
+  padding-left: 2%;
+}
+
+.infoCorona__left {
+  width: 84%;
+  margin-bottom: 0.8%;
+}
+
+.infoCorona__right {
+  width: 16%;
+  min-width: 200px;
+  border-left: thick solid #e5e5e5;
+  padding-left: 1%;
+}
