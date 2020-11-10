@@ -29,7 +29,7 @@
 
 .infoCorona__right {
   width: 16%;
-  min-width: 200px;
+  /* min-width: 200px; */
   border-left: thick solid #e5e5e5;
   padding-left: 1%;
 }

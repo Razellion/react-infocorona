@@ -29,7 +29,7 @@ function News(props) {
       <h2 className="date-heading">{date}</h2>
       <div className="cards">
         {news.activity.map((data, index) => {
-          return <Card data={data} key={index} />;
+          return <Card data={data} id={index} key={index} />;
         })}
       </div>
     </div>

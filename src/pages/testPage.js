@@ -1,6 +1,6 @@
 import React from 'react';
-import { Content, Todo } from '../components';
-
+import { Content } from '../components';
+// , Todo
 const TestPage = () => {
   return (
     <div id="infoCorona">
@@ -8,9 +8,9 @@ const TestPage = () => {
         <h1>Info Corona</h1>
         <Content />
       </div>
-      <div className="infoCorona__right">
+      {/* <div className="infoCorona__right">
         <Todo />
-      </div>
+      </div> */}
     </div>
   );
 };
