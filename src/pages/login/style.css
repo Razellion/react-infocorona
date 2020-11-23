@@ -1,0 +1,16 @@
+.loginPage {
+  padding-left: 5%;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+label {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}

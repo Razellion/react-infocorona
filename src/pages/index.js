@@ -5,3 +5,4 @@ export { default as Login } from './login';
 export { default as ProfileId } from './profileId';
 export { default as InfoCorona } from './infoCorona';
 export { default as TestPage } from './testPage';
+export { default as DetailDate } from './detailDate';

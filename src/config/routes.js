@@ -6,6 +6,7 @@ import {
   ProfileId,
   InfoCorona,
   TestPage,
+  DetailDate,
 } from '../pages';
 
 const routes = [
@@ -22,6 +23,11 @@ const routes = [
   {
     path: '/contact',
     component: Contact,
+    isPublic: true,
+  },
+  {
+    path: '/infoCorona/:dateId',
+    component: DetailDate,
     isPublic: true,
   },
   {

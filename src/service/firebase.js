@@ -1,13 +1,13 @@
 import firebase from 'firebase/app';
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
-  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDERID,
-  appId: process.env.REACT_APP_FIREBASE_APPID,
+  apiKey: 'AIzaSyCnfcC-fLpmW7X5YGB0NyNUtdfDQrtMK7A',
+  authDomain: 'infocorona-a960d.firebaseapp.com',
+  databaseURL: 'https://infocorona-a960d.firebaseio.com',
+  projectId: 'infocorona-a960d',
+  storageBucket: 'infocorona-a960d.appspot.com',
+  messagingSenderId: '451333196473',
+  appId: '1:451333196473:web:2e4ae2bbf244ace9992968',
 };
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
