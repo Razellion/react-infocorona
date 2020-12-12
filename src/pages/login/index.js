@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import { Route, Redirect } from 'react-router-dom';
-import axios from 'axios';
-import cookie from '../../utils/cookie';
+import { setCookie } from '../../utils/cookie';
+import { authService } from '../../service';
 import './style.css';
 
 const Login = () => {
@@ -12,16 +12,13 @@ const Login = () => {
 
   const onSubmitLogin = () => {
     setLoginLoading(true);
-    axios
-      .post('https://dev.api.etalasy.com/v1/auth/login', {
-        email: username,
-        password,
-      })
+    authService
+      .login(username, password)
       .then((res) => {
-        const cookieUser = res.data.data.user;
-        const cookieToken = res.data.data.token;
-        cookie.setCookie('userData', JSON.stringify(cookieUser), 10000);
-        cookie.setCookie('token', JSON.stringify(cookieToken), 10000);
+        const cookieToken = res.token;
+        const cookieUser = res.userId;
+        setCookie('userData', JSON.stringify(cookieUser), 10000);
+        setCookie('token', JSON.stringify(cookieToken), 10000);
       })
       .catch((err) => {
         console.log(err);

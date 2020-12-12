@@ -7,6 +7,8 @@ import {
   InfoCorona,
   TestPage,
   DetailDate,
+  Products,
+  DetailProduct,
 } from '../pages';
 
 const routes = [
@@ -18,6 +20,16 @@ const routes = [
   {
     path: '/profile',
     component: Profile,
+    isPublic: false,
+  },
+  {
+    path: '/products',
+    component: Products,
+    isPublic: false,
+  },
+  {
+    path: '/product/:slug',
+    component: DetailProduct,
     isPublic: false,
   },
   {

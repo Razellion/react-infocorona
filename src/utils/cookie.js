@@ -17,7 +17,7 @@ function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
   const expires = `expires=${d.toUTCString()}`;
-  const domain = process.env.REACT_APP_DOMAIN ?? 'localhost';
+  const domain = process.env.REACT_APP_URL ?? 'localhost';
   document.cookie = `${cname}=${cvalue};${expires};domain=${domain};path=/`;
 }
 
@@ -28,4 +28,4 @@ const isUserAuthenticated = () => {
   return false;
 };
 
-export default { isUserAuthenticated, getCookie, setCookie };
+export { isUserAuthenticated, getCookie, setCookie };

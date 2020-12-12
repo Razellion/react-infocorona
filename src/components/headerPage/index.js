@@ -2,7 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const HeaderPage = () => {
-  const listMenu = ['home', 'profile', 'contact', 'infoCorona', 'testPage'];
+  const listMenu = [
+    'home',
+    'profile',
+    'contact',
+    'infoCorona',
+    'testPage',
+    'products',
+  ];
   return (
     <div className="header">
       {listMenu.map((name) => {
